@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
+body {
+  overflow-x: hidden;
+  background: url(../images/hyundaicard/bg.jpg);
+  font-family: 'Do Hyeon', sans-serif;
+}
+
+.starBg {
+  background: url(../images/hyundaicard/star.png);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
+}
+
+section {
+  position: relative;
+  width: 100vw;
+}
+
+section.top {
+  min-height: 300vh;
+}
+
+section.top h1.title {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  padding-top: 35vh;
+  font-size: 50px;
+  font-weight: 100;
+}
+
+section.top h1.title div {
+  display: inline-block;
+  letter-spacing: 1rem;
+}
+
+section.bottom {
+  background: url(../images/hyundaicard/bottom.png) center bottom/100% no-repeat;
+  min-height: 75vh;
+}
+
+section.bottom .contWrap {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+}
+
+section.bottom .contWrap ul li {
+  display: inline-block;
+  margin: 0 2%;
+  width: 180px;
+  height: 300px;
+  border-radius: 6px 6px 6px 6px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 10px;
+  cursor: pointer;
+}
+
+section.bottom .contWrap ul li img {
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  -webkit-transition: .6s;
+  transition: .6s;
+}
+
+section.bottom .contWrap ul li img:nth-child(2) {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+section.bottom .contWrap ul li :hover .card.front {
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+section.bottom .contWrap ul li :hover .card.back {
+  -webkit-transform: rotateY(0deg) scale(1.2);
+          transform: rotateY(0deg) scale(1.2);
+}
+
+section.bottom .contWrap ul li .card.front {
+  position: absolute;
+  -webkit-transform: rotateY(0deg);
+          transform: rotateY(0deg);
+}
+
+section.bottom .contWrap ul li .card.back {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
+}
+
+section.bottom .contWrap h4 {
+  color: oldlace;
+  font-weight: 300;
+  text-align: center;
+  opacity: 0.8;
+  margin: 80px 0 0 0;
+}
+
+section.bottom .contWrap h2 {
+  text-align: center;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 40px;
+}
+
+section.bottom .topBtn {
+  position: absolute;
+  bottom: 10%;
+  right: 70px;
+  padding: 10px;
+  border-radius: 6px 6px 6px 6px;
+  background-color: #eee;
+  border: 2px solid #eee;
+  -webkit-transition: all .3s ease-out;
+  transition: all .3s ease-out;
+}
+
+section.bottom .topBtn:hover {
+  background-color: #000;
+  border-color: #333;
+  color: #fff;
+}
