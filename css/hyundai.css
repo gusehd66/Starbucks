@@ -110,6 +110,26 @@ section.bottom .contWrap h2 {
   font-size: 40px;
 }
 
+section.bottom .logo {
+  text-decoration: none;
+  cursor: pointer;
+  font-size: 20px;
+  color: whitesmoke;
+  text-align: center;
+  position: absolute;
+  left: 50px;
+  bottom: 50px;
+}
+
+section.bottom .logo:visited {
+  text-decoration: none;
+}
+
+section.bottom .logo p {
+  margin: 0;
+  opacity: .6;
+}
+
 section.bottom .topBtn {
   position: absolute;
   bottom: 10%;
