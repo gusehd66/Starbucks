@@ -1,129 +1,126 @@
-@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap");
 
 body {
-    overflow-x: hidden;
-    background: url(../images/hyundaicard/bg.jpg);
-    font-family: 'Do Hyeon', sans-serif;
+  overflow-x: hidden;
+  background: url(../images/hyundaicard/bg.jpg);
+  font-family: "Do Hyeon", sans-serif;
 }
 .starBg {
-    background: url(../images/hyundaicard/star.png);
-    position: fixed;
-    top:0;
-    width:100vw;
-    height: 200vh;
+  background: url(../images/hyundaicard/star.png);
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 200vh;
 }
 
 section {
-    position: relative;
-    width:100vw;
-    &.top {
-        min-height: 300vh;
-        h1.title {
-            position: relative;
-            color: #fff;
-            text-align: center;
-            padding-top: 35vh;
-            font-size: 50px;
-            font-weight: 100;
-            div {
-                display: inline-block;
-                letter-spacing: 1rem;
-            }
-        }
+  position: relative;
+  width: 100vw;
+  &.top {
+    min-height: 300vh;
+    h1.title {
+      position: relative;
+      color: #fff;
+      text-align: center;
+      padding-top: 35vh;
+      font-size: 50px;
+      font-weight: 100;
+      div {
+        display: inline-block;
+        letter-spacing: 1rem;
+      }
     }
-    &.bottom {
-        background: url(../images/hyundaicard/bottom.png) center bottom / 100% no-repeat;
-        min-height: 75vh;
-        
-        .contWrap {
-            position: relative;
-            margin: 0 auto;
-            width:100%;
-            max-width: 1200px;
-            ul{
-                li {
-                    display: inline-block;
-                    margin : 0 2%;
-                    width: 180px;
-                    height: 300px;
-                    border-radius: 6px 6px 6px 6px;
-                    box-sizing: border-box ;
-                    padding: 10px;
-                    cursor: pointer;
-                    img {
-                        width: 100%;
-                        backface-visibility: hidden;
-                        transition: .6s;
-                        &:nth-child(2) {
-                            transform: rotateY(-180deg);
-                        }
-                    }
-                    :hover .card.front{
-                        transform:  rotateY(180deg);
-                    }
-                    :hover .card.back{
-                        transform:  rotateY(0deg) scale(1.2);
-                    }
-                    .card.front {
-                        position: absolute;
-                        transform: rotateY(0deg);
-                    }
-                    .card.back {
-                        transform: rotateY(-180deg);
-                    }
-                }
-            }
-            h4 {
-                color: oldlace;
-                font-weight: 300;
-                text-align: center;
-                opacity: 0.8;
-                margin:80px 0 0 0;
-            }
-            h2 {
-                text-align: center;
-                color: #fff;
-                margin-top:10px;
-                font-weight: 100;
-                font-size: 40px;
-            }
-        }
-        .logo {
-            text-decoration: none;
-            cursor: pointer;
-            font-size: 20px;
-            color: whitesmoke;
-            text-align: center;
-            position: absolute;
-            left: 50px;
-            bottom: 50px;
-            &:visited{
-                text-decoration: none;
-            }
-            p {
-                margin: 0;
-                opacity: .6;
-            }
-        }
-        .topBtn {
-            position: absolute;
-            bottom: 10%;
-            right: 70px;
-            padding : 10px;
-            border-radius: 6px 6px 6px 6px;
-            background-color: #eee;
-            border: 2px solid #eee;
-            transition: all .3s ease-out;
+  }
+  &.bottom {
+    background: url(../images/hyundaicard/bottom.png) center bottom / 100%
+      no-repeat;
+    min-height: 75vh;
 
-            &:hover {
-                background-color: #000;
-                border-color: #333;
-                color: #fff;
+    .contWrap {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1200px;
+      ul {
+        li {
+          display: inline-block;
+          margin: 0 2%;
+          width: 180px;
+          height: 300px;
+          border-radius: 6px 6px 6px 6px;
+          box-sizing: border-box;
+          padding: 10px;
+          cursor: pointer;
+          img {
+            width: 100%;
+            backface-visibility: hidden;
+            transition: 0.6s;
+            &:nth-child(2) {
+              transform: rotateY(-180deg);
             }
+          }
+          :hover .card.front {
+            transform: rotateY(180deg);
+          }
+          :hover .card.back {
+            transform: rotateY(0deg) scale(1.2);
+          }
+          .card.front {
+            position: absolute;
+            transform: rotateY(0deg);
+          }
+          .card.back {
+            transform: rotateY(-180deg);
+          }
         }
+      }
+      h4 {
+        color: oldlace;
+        font-weight: 300;
+        text-align: center;
+        opacity: 0.8;
+        margin: 80px 0 0 0;
+      }
+      h2 {
+        text-align: center;
+        color: #fff;
+        margin-top: 10px;
+        font-weight: 100;
+        font-size: 40px;
+      }
     }
+    .logo {
+      text-decoration: none;
+      cursor: pointer;
+      font-size: 20px;
+      color: whitesmoke;
+      text-align: center;
+      position: absolute;
+      left: 50px;
+      bottom: 50px;
+      &:visited {
+        text-decoration: none;
+      }
+      p {
+        margin: 0;
+        opacity: 0.6;
+      }
+    }
+    .topBtn {
+      position: absolute;
+      bottom: 10%;
+      right: 70px;
+      padding: 10px;
+      border-radius: 6px 6px 6px 6px;
+      background-color: #eee;
+      border: 2px solid #eee;
+      transition: all 0.3s ease-out;
+
+      &:hover {
+        background-color: #000;
+        border-color: #333;
+        color: #fff;
+      }
+    }
+  }
 }
-
-
-
-

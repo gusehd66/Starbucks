@@ -2,7 +2,7 @@
 body {
   overflow-x: hidden;
   background: url(../images/hyundaicard/bg.jpg);
-  font-family: 'Do Hyeon', sans-serif;
+  font-family: "Do Hyeon", sans-serif;
 }
 
 .starBg {
@@ -54,8 +54,6 @@ section.bottom .contWrap ul li {
   width: 180px;
   height: 300px;
   border-radius: 6px 6px 6px 6px;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
   padding: 10px;
   cursor: pointer;
 }
@@ -63,35 +61,35 @@ section.bottom .contWrap ul li {
 section.bottom .contWrap ul li img {
   width: 100%;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-  -webkit-transition: .6s;
-  transition: .6s;
+  backface-visibility: hidden;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
 }
 
 section.bottom .contWrap ul li img:nth-child(2) {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 section.bottom .contWrap ul li :hover .card.front {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 
 section.bottom .contWrap ul li :hover .card.back {
   -webkit-transform: rotateY(0deg) scale(1.2);
-          transform: rotateY(0deg) scale(1.2);
+  transform: rotateY(0deg) scale(1.2);
 }
 
 section.bottom .contWrap ul li .card.front {
   position: absolute;
   -webkit-transform: rotateY(0deg);
-          transform: rotateY(0deg);
+  transform: rotateY(0deg);
 }
 
 section.bottom .contWrap ul li .card.back {
   -webkit-transform: rotateY(-180deg);
-          transform: rotateY(-180deg);
+  transform: rotateY(-180deg);
 }
 
 section.bottom .contWrap h4 {
@@ -127,7 +125,7 @@ section.bottom .logo:visited {
 
 section.bottom .logo p {
   margin: 0;
-  opacity: .6;
+  opacity: 0.6;
 }
 
 section.bottom .topBtn {
@@ -138,8 +136,8 @@ section.bottom .topBtn {
   border-radius: 6px 6px 6px 6px;
   background-color: #eee;
   border: 2px solid #eee;
-  -webkit-transition: all .3s ease-out;
-  transition: all .3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 section.bottom .topBtn:hover {
